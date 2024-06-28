@@ -1,0 +1,79 @@
+{
+    "name": "tda/laravel-analytics-v4",
+    "description": "GA4 integration for laravel 8",
+    "keywords": [
+        "tda",
+        "laravel",
+        "ga4",
+        "laravel-analytics-v4"
+    ],
+    "homepage": "https://github.com/thedigitalarchitects/laravel-analytics-v4",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JL",
+            "email": "jl@myoutdesk.com",
+            "role": "Developer"
+        },
+        {
+            "name": "DL",
+            "email": "davileichs@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "google/analytics-data": "^0.8.6|^0.9",
+        "illuminate/contracts": "^8.0",
+        "spatie/laravel-package-tools": "^1.9.2"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^6.0",
+        "nunomaduro/larastan": "^2.0.1",
+        "orchestra/testbench": "^7.0|^8.0",
+        "pestphp/pest": "^1.22.2|^1.22",
+        "pestphp/pest-plugin-laravel": "^1.4",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "spatie/laravel-ray": "^1.26"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tda\\LaravelAnalyticsV4\\": "src",
+            "Tda\\LaravelAnalyticsV4\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tda\\LaravelAnalyticsV4\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tda\\LaravelAnalyticsV4\\LaravelAnalyticsV4ServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAnalyticsV4": "Tda\\LaravelAnalyticsV4\\Facades\\LaravelAnalyticsV4"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

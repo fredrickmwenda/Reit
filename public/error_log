@@ -1,0 +1,4 @@
+[05-Apr-2024 10:07:49 Africa/Nairobi] PHP Deprecated:  Optional parameter $user_id declared before required parameter $post_id is implicitly treated as a required parameter in /home2/vilhive/public_html/app/Helpers/comment.php on line 14
+[05-Apr-2024 10:07:49 Africa/Nairobi] PHP Deprecated:  Optional parameter $field declared before required parameter $data is implicitly treated as a required parameter in /home2/vilhive/public_html/app/Helpers/user.php on line 251
+[28-Apr-2024 01:44:30 Africa/Nairobi] PHP Deprecated:  Optional parameter $user_id declared before required parameter $post_id is implicitly treated as a required parameter in /home2/vilhive/public_html/app/Helpers/comment.php on line 14
+[28-Apr-2024 01:44:30 Africa/Nairobi] PHP Deprecated:  Optional parameter $field declared before required parameter $data is implicitly treated as a required parameter in /home2/vilhive/public_html/app/Helpers/user.php on line 251

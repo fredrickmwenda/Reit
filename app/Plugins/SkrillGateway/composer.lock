@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "30cf5f0b5571135e39c484870377995f",
+    "packages": [
+        {
+            "name": "obydul/laraskrill",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mdobydullah/laraskrill.git",
+                "reference": "08327448ffb48b802682868dfbafea968830dc77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mdobydullah/laraskrill/zipball/08327448ffb48b802682868dfbafea968830dc77",
+                "reference": "08327448ffb48b802682868dfbafea968830dc77",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Obydul\\LaraSkrill\\LaraSkrillServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Obydul\\LaraSkrill\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Md Obydullah",
+                    "email": "hi@obydul.me"
+                }
+            ],
+            "description": "LaraSkrill is a laravel plugin for processing payments through Skrill.",
+            "support": {
+                "issues": "https://github.com/mdobydullah/laraskrill/issues",
+                "source": "https://github.com/mdobydullah/laraskrill/tree/master"
+            },
+            "time": "2020-05-24T08:40:46+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

@@ -1,0 +1,39 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} vilhive.com\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://vilhive.com.com/$1 [R,L]
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+            Options -MultiViews
+        </IfModule>
+
+        RewriteEngine On
+
+        RewriteCond %{REQUEST_FILENAME} -d [OR]
+        RewriteCond %{REQUEST_FILENAME} -f
+        RewriteRule ^ ^$1 [N]
+
+        RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+        RewriteRule ^(.*)$ public/$1
+
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteRule ^ server.php
+
+</IfModule>
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
