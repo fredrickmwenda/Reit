@@ -5,6 +5,7 @@ $setting_widget_nav = [
 'footer_menu_2',
 'footer_menu_3',
 ];
+
 foreach($setting_widget_nav as $value){
 $menu_id = get_option($value);
 $arr_widget_nav[] = [

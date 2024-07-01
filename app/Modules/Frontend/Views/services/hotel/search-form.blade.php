@@ -94,7 +94,7 @@
                         {{$str_guest}}
                     </span>
                 </div>
-                <div class="dropdown-menu" aria-labelledby="dropdownGuestButton">
+                <div class="dropdown-menu" aria-labelledby="dropdownGuestButton" style="z-index: 9999;">
                     <div class="item d-flex align-items-center justify-content-between">
                         <div class="label">{{__('Rooms')}}</div>
                         <div class="value">

@@ -1,6 +1,7 @@
 @php
 	$list_destination = get_option('list_destination');
 	$all_services = get_services_enabled();
+	
 	$number_services = count($all_services);
 @endphp
 @if(!empty($list_destination) && $number_services > 0)
@@ -33,7 +34,8 @@
 									'url' => $search_url,
 									'text' => sprintf(_n(__('%s Car'), __('%s Cars'), $number_service), $number_service)
 								];
-							}elseif($service == GMZ_SERVICE_APARTMENT){
+							}
+							elseif($service == GMZ_SERVICE_APARTMENT){
 						        $find_services[] = [
 									'url' => $search_url,
 									'text' => sprintf(_n(__('%s Apartment'), __('%s Apartments'), $number_service), $number_service)
@@ -101,6 +103,7 @@
 					        $text = sprintf(__('There are %s Beauty'), $number_service);
 					    }
 					}
+					
 				@endphp
 				<div class="destination-item hotel-item--grid"">
 					<div class="location-item__thumbnail">

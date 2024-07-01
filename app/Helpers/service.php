@@ -70,9 +70,9 @@ if (!function_exists('add_wishlist_box')) {
     {
         @ob_start();
         if (is_user_login()) {
-            info(is_user_login());
+            // info(is_user_login());
             $wishlist = list_wishlist($post_type);
-            info($post_type);
+            //info($post_type);
             if (!empty($wishlist) && in_array($post_id, $wishlist)) {
                 $in_wishlist = true;
                 $title_wishlist = __('Remove to wishlist');
@@ -894,6 +894,7 @@ if (!function_exists('get_services_enabled')) {
                 }
             }
         }
+        info('services enabled are', $res);
 
         return $res;
     }

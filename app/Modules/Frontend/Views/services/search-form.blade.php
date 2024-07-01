@@ -66,7 +66,7 @@ array_push($srvc, GMZ_SERVICE_BEAUTY);
                         }
                         @endphp
                         <li class="nav-item">
-                            <a class="nav-link {{$property_active}}" id="property-search-tab" data-toggle="tab" href="#property-search" role="tab" aria-controls="rent-search" aria-selected="true" style="width: max-content;">
+                            <a class="nav-link {{$property_active}}" id="property-search-tab" data-toggle="tab" href="#property-search" role="tab" aria-controls="rent-search" aria-selected="true" >
                                 <div class="text-center">
 
                                     <h6 class="mb-0">{{__(' Selling Properties')}}</h6>

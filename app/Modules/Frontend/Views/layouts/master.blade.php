@@ -37,6 +37,23 @@
             color: #fff;
             text-align: center;
             padding-top: 20%;
+        } 
+        .dropdown-menu-up {
+
+            position: absolute!important;
+            will-change: transform;
+            top: auto!important;
+            bottom: 100%!important;
+            left: 0!important;
+            transform: translateY(-10px); /* Adjust as needed */
+        }
+        #property-search-tab{
+            width: max-content;
+        }
+        @media(max-width:991px){
+            #property-search-tab{
+            width: auto;
+           }
         }
 
 /* Adjusted CSS */
@@ -122,6 +139,20 @@
 @include('Frontend::components.footer')
 @php init_footer(); @endphp
 
+
+<script>
+    $(document).ready(function(){
+    $('#dropdownGuestButton').on('click', function(){
+        console.log('clicked');
+        //check if the nearest dropdown menu  has show in but it uses bootstrapthe class
+        // if it has it add the dropdown-menu-up
+        var dropdownMenu = $(this).next('.dropdown-menu');
+        dropdownMenu.toggleClass('show dropdown-menu-up');
+    });
+});
+
+</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-33YMKDEV04"></script>
 <script>
@@ -144,6 +175,8 @@
 
 
 @stack('scripts')
+
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
