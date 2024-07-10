@@ -16,7 +16,7 @@
         <link rel="shortcut icon" type="image/png" href="{{ $favicon }}"/>
     @endif
 
-    <title>{{get_translate(get_option('site_name', 'iBooking'))}} - @yield('title')</title>
+    <title>{{get_translate(get_option('site_name', 'Vil Hive'))}} - @yield('title')</title>
 
     @php admin_init_header(); @endphp
     @stack('styles')

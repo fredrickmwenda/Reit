@@ -362,7 +362,7 @@ class OrderService extends AbstractService
                 }
 
                 if ($payment == 'paystack') {
-                    info('paystack');
+                    
                     $model = new \App\Models\Order();
                     $order = $model->query()->findOrFail($order_id);
 

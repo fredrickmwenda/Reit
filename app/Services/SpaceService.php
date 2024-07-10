@@ -112,49 +112,7 @@ class SpaceService extends AbstractService
         ];
     }
 
-    // public function sendEnquiry(Request $request)
-    // {
-    //     $postID = $request->post('post_id');
-    //     $postHashing = $request->get('post_hashing');
-
-    //     if (!gmz_compare_hashing($postID, $postHashing)) {
-    //         return [
-    //             'status' => false,
-    //             'message' => __('Data is invalid')
-    //         ];
-    //     }
-
-    //     $valid = Validator::make($request->all(), [
-    //         'full_name' => ['required'],
-    //         'email' => ['required', 'email'],
-    //         'content' => ['required']
-    //     ]);
-
-    //     if ($valid->fails()) {
-    //         return [
-    //             'status' => 0,
-    //             'message' => $valid->errors()->first()
-    //         ];
-    //     }
-
-    //     $post_object = get_post($postID, GMZ_SERVICE_SPACE);
-    //     $postType = get_post_type_by_object($post_object);
-    //     $request->request->add(['post_type' => $postType]);
-    //     if (!empty($post_object)) {
-
-    //         dispatch(new SendEnquiryJob($request->all(), $post_object));
-    //         //\GMZ_Mail::inst()->sendEmailSpaceEnquiry($post_object, $request->all());
-
-    //         return [
-    //             'status' => true,
-    //             'message' => __('Send your request successfully. Please wait response from owner of this service.')
-    //         ];
-    //     }
-    //     return [
-    //         'status' => false,
-    //         'message' => __('Data is invalid')
-    //     ];
-    // }
+ 
 
 
     public function sendEnquiry(Request $request)
@@ -215,7 +173,7 @@ class SpaceService extends AbstractService
 
         return [
             'status' => true,
-            'message' => __('Send your request successfully. Please wait response from owner of this service.')
+            'message' => __('Your request has been sent successfully. Please wait response from owner of this service.')
         ];
     }
 

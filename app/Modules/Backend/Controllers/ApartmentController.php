@@ -59,10 +59,10 @@ class ApartmentController extends Controller
     public function editApartmentView($id)
     {
         $postData = $this->service->storeTermData($id);
-        // info($postData);
+        
         if ($postData) {
             $postData = $postData->getAttributes();
-            info($postData);
+            
             $postData['post_type'] = 'apartment';
             return $this->getView($this->getFolderView('services.apartment.edit'), [
                 'serviceData' => $postData,

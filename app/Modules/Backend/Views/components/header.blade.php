@@ -1,6 +1,6 @@
 @php
     $logo_dashboard = get_option('logo-dashboard');
-    $site_name = get_translate(get_option('site_name', 'iBooking'));
+    $site_name = get_translate(get_option('site_name', 'Vil Hive'));
 @endphp
 <div class="header-container fixed-top">
     <header class="header navbar navbar-expand-sm">

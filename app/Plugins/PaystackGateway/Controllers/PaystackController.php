@@ -49,7 +49,7 @@ class PaystackController extends Controller
 
     private function preparePaymentDetails($order, $customer_email)
     {
-        info($order);
+        
         return [
             'amount' => $order->amount * 100, // Paystack requires amount in kobo (multiply by 100 for naira)
             'email' => $customer_email,
@@ -89,7 +89,7 @@ class PaystackController extends Controller
     {
         // Retrieve the payload from the incoming request
         $payload = $request->all();
-        info($payload);
+        
     
         // Verify the authenticity of the webhook request
         // Verify Paystack signature here

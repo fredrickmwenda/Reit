@@ -132,7 +132,7 @@ if (!function_exists('placeholder_image')) {
 			default:
 
 				$url = '/images/tour/tour_default_' . $size[0] . 'x' . $size[1] . '.jpg';
-				info($url);
+				
 				break;
 		}
 

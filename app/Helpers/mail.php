@@ -7,7 +7,7 @@ if(!function_exists('send_email')) {
 					$from = get_option( 'email_username');
 				}
 				if ( empty( $from_label ) ) {
-					$from_label = get_translate( get_option( 'site_name', 'iBooking' ) );
+					$from_label = get_translate( get_option( 'site_name', 'Vil Hive' ) );
 				}
 				$message->from( $from, $from_label );
 				$message->subject( $subject );

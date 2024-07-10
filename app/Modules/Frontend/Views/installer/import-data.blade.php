@@ -11,7 +11,7 @@
 
 @section('content')
     <div class="installer-wrapper">
-        <h1 class="logo"><a href="https://booteam.co">iBooking</a></h1>
+        <h1 class="logo"><a href="https://vilhive.com">Vil Hive</a></h1>
         <div class="inner">
             @if($step < 7)
                 <p class="mb-4"><b>Importing Demo Data...</b></p>

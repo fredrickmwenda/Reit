@@ -18,7 +18,7 @@ class WishlistController extends Controller
     public function addWishlistAction(Request $request)
     {
         $response = $this->service->addWishlist($request);
-        info($response);
+        
         return response()->json($response);
     }
 }

@@ -7,7 +7,7 @@
             @if(!empty($copy_right))
                 {{ get_translate($copy_right) }}
             @else
-                ©{{date('Y')}} iBooking - All rights reserved.
+                ©{{date('Y')}} Vil Hive - All rights reserved.
             @endif
         </p>
     </div>

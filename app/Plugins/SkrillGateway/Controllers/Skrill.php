@@ -32,7 +32,7 @@ class Skrill extends \BaseGateway
         $returnUrl = $this->getLinkPaymentChecking($order_id);
         $cancelUrl = $this->getLinkPaymentChecking($order_id, true);
 
-        $site_name = get_option('site_name', 'iBooking');
+        $site_name = get_option('site_name', 'Vil Hive');
         $customer_email = request()->post('email');
 
         $this->_gatewayObject = new SkrillRequest();
@@ -49,9 +49,9 @@ class Skrill extends \BaseGateway
         $this->_gatewayObject->language = 'EN';
         $this->_gatewayObject->prepare_only = '1';
         $this->_gatewayObject->merchant_fields = $site_name . ', ' . $customer_email;
-        $this->_gatewayObject->site_name = get_option('site_name', 'iBooking');
+        $this->_gatewayObject->site_name = get_option('site_name', 'Vil Hive');
         $this->_gatewayObject->customer_email = $customer_email;
-        $this->_gatewayObject->detail1_description = 'iBooking Reservation';
+        $this->_gatewayObject->detail1_description = 'Vil Hive Reservation';
         $this->_gatewayObject->detail1_text = '101';
 
 

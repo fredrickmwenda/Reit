@@ -73,7 +73,7 @@ class AuthorizeNet extends \BaseGateway
             ] ),
             'amount'        => number_format( (float)$total, 2, '.', '' ),
             'currency'      => $currency,
-            'description'   => 'iBooking Reservation',
+            'description'   => 'Vil Hive Reservation',
             'transactionId' => uniqid() . $order_id,
             'failureUrl'    => $cancelUrl,
             'returnUrl'     => $returnUrl,

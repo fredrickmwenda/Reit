@@ -6,7 +6,8 @@
  * Time: 16:21
  */
 $logo = get_logo();
-$site_name = get_translate(get_option('site_name', 'iBooking'));
+dd($logo);
+$site_name = get_translate(get_option('site_name', 'Vil Hive'));
 $is_logged = is_user_login();
 ?>
 @include('Frontend::components.loader', ['page' => true])

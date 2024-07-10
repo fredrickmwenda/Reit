@@ -43,7 +43,7 @@ Route::get('/clear-optimization', function () {
 
         Route::post('get-icons', 'OptionController@getIconsAction');
 
-        /*Route::get('import-font', 'ImportController@importFontView')->name('import-font');*/
+        Route::get('import-font', 'ImportController@importFontView')->name('import-font');
         Route::post('import-font', 'ImportController@importFontAction');
         Route::post('delete-font-icon', 'ImportController@deleteFontIconAction');
 

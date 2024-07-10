@@ -3,7 +3,7 @@ $start = request()->get('check_in', date('Y-m-d'));
 $end = request()->get('check_out', date('Y-m-d', strtotime('+1 days', strtotime($start))));
 $booking_form = $post['booking_form'];
 $booking_type = $post['booking_type'];
-info($booking_type);
+
 $external_booking = $post['external_booking'];
 @endphp 
 

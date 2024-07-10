@@ -140,7 +140,7 @@ class SubscriptionPlanController extends Controller
         
         // Handle Paystack payment callback here after the user completes payment
         $paymentData = Paystack::getPaymentData();
-        info($paymentData);
+        
     
         // Process payment data, update subscription status, and perform necessary actions
         $user = auth()->user();

@@ -81,7 +81,7 @@ class SubscriptionPlanController extends Controller
         $user = auth()->user();
         $plan = Plan::find($id);
         $planPrice = PlanPrice::where('plan_id', $plan->id)->first();
-        //info($planPrice);
+        
         // Retrieve the selected subscription plan by ID
         //$subscriptionPlan = SubscriptionPlan::findOrFail($planId);
         TempSubscription::create([

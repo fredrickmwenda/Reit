@@ -162,6 +162,7 @@ if(!function_exists('get_option_default_fields')) {
 if(!function_exists('get_config_settings')){
     function get_config_settings(){
         $settings = Eventy::filter('gmz_settings', admin_config('settings', 'settings'));
+		
         return $settings;
     }
 }

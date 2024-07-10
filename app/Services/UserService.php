@@ -93,13 +93,13 @@ class UserService extends AbstractService
             dispatch(new SendPartnerRequestJob($post_data));
             return [
                 'status' => 1,
-                'message' => __('Send your request successfully. Please wait admin review your account. Now, you can login as normal user on site')
+                'message' => __('Your request has been sent successfully. Please wait admin review your account. Now, you can login as normal user on site')
             ];
         }
 
         return [
             'status' => 0,
-            'message' => __('Send your request failed')
+            'message' => __('Your request failed')
         ];
     }
 

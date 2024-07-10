@@ -1,0 +1,33 @@
+{
+    "name": "socialiteproviders/pinterest",
+    "description": "Pinterest OAuth2 Provider for Laravel Socialite",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "oauth",
+        "pinterest",
+        "provider",
+        "socialite"
+    ],
+    "authors": [
+        {
+            "name": "Michael Tournaud",
+            "email": "ollibrius@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/socialiteproviders/providers/issues",
+        "source": "https://github.com/socialiteproviders/providers",
+        "docs": "https://socialiteproviders.com/pinterest"
+    },
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "socialiteproviders/manager": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocialiteProviders\\Pinterest\\": ""
+        }
+    }
+}

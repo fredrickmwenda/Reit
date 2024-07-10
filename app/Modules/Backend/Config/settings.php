@@ -59,7 +59,7 @@ return [
                                 'label' => ilangs('Site Name'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'iBooking',
+                                'std' => 'Vil Hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'general'
@@ -189,7 +189,7 @@ return [
                                 'label' => ilangs('Text on slider'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'Enjoy a great ride with ibooking',
+                                'std' => 'Enjoy a great ride with vil hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'home_page'
@@ -608,7 +608,7 @@ return [
                                 'label' => ilangs('Text on slider'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'Enjoy a great ride with ibooking',
+                                'std' => 'Enjoy a great ride with vil hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'hotel_service',
@@ -761,7 +761,7 @@ return [
                                 'label' => ilangs('Text on slider'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'Enjoy a great ride with ibooking',
+                                'std' => 'Enjoy a great ride with vil hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'apartment_service',
@@ -915,7 +915,7 @@ return [
                                 'label' => ilangs('Text on slider'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'Enjoy a great ride with ibooking',
+                                'std' => 'Enjoy a great ride with vil hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'property_service',
@@ -998,7 +998,7 @@ return [
                             ],
                         ]
                     ],
-                
+
                     [
                         'id' => 'car_service',
                         'heading' => ilangs('Car'),
@@ -1068,7 +1068,7 @@ return [
                                 'label' => ilangs('Text on slider'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'Enjoy a great ride with ibooking',
+                                'std' => 'Enjoy a great ride with vil hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'car_service',
@@ -1221,7 +1221,7 @@ return [
                                 'label' => ilangs('Text on slider'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'Enjoy a great ride with ibooking',
+                                'std' => 'Enjoy a great ride with vil hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'space_service',
@@ -1374,7 +1374,7 @@ return [
                                 'label' => ilangs('Text on slider'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'Enjoy a great ride with ibooking',
+                                'std' => 'Enjoy a great ride with vil hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'tour_service',
@@ -1527,7 +1527,7 @@ return [
                                 'label' => ilangs('Text on slider'),
                                 'type' => 'text',
                                 'layout' => 'col-12 col-md-8',
-                                'std' => 'Enjoy a great ride with ibooking',
+                                'std' => 'Enjoy a great ride with vil hive',
                                 'break' => true,
                                 'translation' => true,
                                 'tab' => 'beauty_services',
@@ -2099,108 +2099,441 @@ return [
             ],
 
             //Social Network
+            // Social Login Heading
             [
-                'id' => 'social_heading',
-                'label' => ilangs('Social Login'),
-                'type' => 'heading',
-                'layout' => 'col-12 col-md-8',
-                'std' => '',
-                'section' => 'advanced_options',
+                'id' => 'social_heading', // Unique identifier for the heading
+                'label' => ilangs('Social Login'), // Label text for the heading
+                'type' => 'heading', // Type of element (heading)
+                'layout' => 'col-12 col-md-8', // Layout styling
+                'std' => '', // Default value (none in this case)
+                'section' => 'advanced_options', // Section where this element belongs
             ],
+
+            // Social Network Tab
             [
-                'id' => 'social_tab',
-                'label' => ilangs('Social Network'),
-                'type' => 'tab',
-                'layout' => 'col-12 col-md-8',
-                'std' => '#e2a03f',
-                'break' => true,
-                'translation' => true,
-                'tabs' => [
+                'id' => 'social_tab', // Unique identifier for the tab
+                'label' => ilangs('Social Network'), // Label text for the tab
+                'type' => 'tab', // Type of element (tab)
+                'layout' => 'col-12 col-md-8', // Layout styling
+                'std' => '#e2a03f', // Default value for the tab
+                'break' => true, // Indicates a break in the layout
+                'translation' => true, // Indicates if this element supports translation
+                'tabs' => [ // Tabs array for different social network logins
+
+                    // Facebook Login Tab
                     [
-                        'id' => 'facebook_login',
-                        'heading' => ilangs('Facebook Login'),
-                        'fields' => [
+                        'id' => 'facebook_login', // Unique identifier for the Facebook tab
+                        'heading' => ilangs('Facebook Login'), // Heading text for the Facebook tab
+                        'fields' => [ // Fields within the Facebook tab
+
+                            // Enable Facebook Login
                             [
-                                'id' => 'facebook_login_enable',
-                                'label' => ilangs('Enable'),
-                                'type' => 'switcher',
-                                'layout' => 'col-12',
-                                'std' => 'on',
-                                'break' => true,
-                                'tab' => 'facebook_login'
+                                'id' => 'facebook_login_enable', // Unique identifier for the enable switcher
+                                'label' => ilangs('Enable'), // Label text for the switcher
+                                'type' => 'switcher', // Type of element (switcher)
+                                'layout' => 'col-12', // Layout styling
+                                'std' => 'on', // Default value (on)
+                                'break' => true, // Indicates a break in the layout
+                                'tab' => 'facebook_login' // Tab identifier
                             ],
+
+                            // Facebook App ID
                             [
-                                'id' => 'facebook_login_client_id',
-                                'label' => ilangs('App ID'),
-                                'type' => 'text',
-                                'layout' => 'col-12 col-md-6',
-                                'condition' => 'facebook_login_enable:on',
-                                'tab' => 'facebook_login',
+                                'id' => 'facebook_login_client_id', // Unique identifier for the App ID text field
+                                'label' => ilangs('App ID'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'condition' => 'facebook_login_enable:on', // Condition to show this field
+                                'tab' => 'facebook_login', // Tab identifier
                             ],
+
+                            // Facebook App Secret
                             [
-                                'id' => 'facebook_login_client_secret',
-                                'label' => ilangs('App Secret'),
-                                'type' => 'text',
-                                'layout' => 'col-12 col-md-6',
-                                'break' => true,
-                                'condition' => 'facebook_login_enable:on',
-                                'tab' => 'facebook_login'
+                                'id' => 'facebook_login_client_secret', // Unique identifier for the App Secret text field
+                                'label' => ilangs('App Secret'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'facebook_login_enable:on', // Condition to show this field
+                                'tab' => 'facebook_login' // Tab identifier
                             ],
+
+                            // Facebook Callback URL
                             [
-                                'id' => 'facebook_login_redirect_url',
-                                'label' => ilangs('Callback Url'),
-                                'type' => 'text',
-                                'layout' => 'col-12',
-                                'break' => true,
-                                'condition' => 'facebook_login_enable:on',
-                                'tab' => 'facebook_login'
+                                'id' => 'facebook_login_redirect_url', // Unique identifier for the Callback URL text field
+                                'label' => ilangs('Callback Url'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'facebook_login_enable:on', // Condition to show this field
+                                'tab' => 'facebook_login' // Tab identifier
                             ]
                         ]
                     ],
+
+                    // Google Login Tab
                     [
-                        'id' => 'google_login',
-                        'heading' => ilangs('Google Login'),
-                        'fields' => [
+                        'id' => 'google_login', // Unique identifier for the Google tab
+                        'heading' => ilangs('Google Login'), // Heading text for the Google tab
+                        'fields' => [ // Fields within the Google tab
+
+                            // Enable Google Login
                             [
-                                'id' => 'google_login_enable',
-                                'label' => ilangs('Enable'),
-                                'type' => 'switcher',
-                                'layout' => 'col-12',
-                                'std' => 'on',
-                                'break' => true,
-                                'tab' => 'google_login'
+                                'id' => 'google_login_enable', // Unique identifier for the enable switcher
+                                'label' => ilangs('Enable'), // Label text for the switcher
+                                'type' => 'switcher', // Type of element (switcher)
+                                'layout' => 'col-12', // Layout styling
+                                'std' => 'on', // Default value (on)
+                                'break' => true, // Indicates a break in the layout
+                                'tab' => 'google_login' // Tab identifier
                             ],
+
+                            // Google Client ID
                             [
-                                'id' => 'google_login_client_id',
-                                'label' => ilangs('Client ID'),
-                                'type' => 'text',
-                                'layout' => 'col-12 col-md-6',
-                                'condition' => 'google_login_enable:on',
-                                'tab' => 'google_login',
+                                'id' => 'google_login_client_id', // Unique identifier for the Client ID text field
+                                'label' => ilangs('Client ID'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'condition' => 'google_login_enable:on', // Condition to show this field
+                                'tab' => 'google_login', // Tab identifier
                             ],
+
+                            // Google Client Secret
                             [
-                                'id' => 'google_login_client_secret',
-                                'label' => ilangs('Client Secret'),
-                                'type' => 'text',
-                                'layout' => 'col-12 col-md-6',
-                                'break' => true,
-                                'condition' => 'google_login_enable:on',
-                                'tab' => 'google_login'
+                                'id' => 'google_login_client_secret', // Unique identifier for the Client Secret text field
+                                'label' => ilangs('Client Secret'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'google_login_enable:on', // Condition to show this field
+                                'tab' => 'google_login' // Tab identifier
                             ],
+
+                            // Google Redirect URL
                             [
-                                'id' => 'google_login_redirect_url',
-                                'label' => ilangs('Redirect Url'),
-                                'type' => 'text',
-                                'layout' => 'col-12',
-                                'break' => true,
-                                'condition' => 'google_login_enable:on',
-                                'tab' => 'google_login'
+                                'id' => 'google_login_redirect_url', // Unique identifier for the Redirect URL text field
+                                'label' => ilangs('Redirect Url'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'google_login_enable:on', // Condition to show this field
+                                'tab' => 'google_login' // Tab identifier
                             ]
                         ]
-                    ]
+                    ],
+
+                    // Slack Login Tab
+                    // [
+                    //     'id' => 'slack_login', // Unique identifier for the Slack tab
+                    //     'heading' => ilangs('Slack Login'), // Heading text for the Slack tab
+                    //     'fields' => [ // Fields within the Slack tab
+
+                    //         // Enable Slack Login
+                    //         [
+                    //             'id' => 'slack_login_enable', // Unique identifier for the enable switcher
+                    //             'label' => ilangs('Enable'), // Label text for the switcher
+                    //             'type' => 'switcher', // Type of element (switcher)
+                    //             'layout' => 'col-12', // Layout styling
+                    //             'std' => 'on', // Default value (on)
+                    //             'break' => true, // Indicates a break in the layout
+                    //             'tab' => 'slack_login' // Tab identifier
+                    //         ],
+
+                    //         // Slack Client ID
+                    //         [
+                    //             'id' => 'slack_login_client_id', // Unique identifier for the Client ID text field
+                    //             'label' => ilangs('Client ID'), // Label text for the text field
+                    //             'type' => 'text', // Type of element (text)
+                    //             'layout' => 'col-12 col-md-6', // Layout styling
+                    //             'condition' => 'slack_login_enable:on', // Condition to show this field
+                    //             'tab' => 'slack_login', // Tab identifier
+                    //         ],
+
+                    //         // Slack Client Secret
+                    //         [
+                    //             'id' => 'slack_login_client_secret', // Unique identifier for the Client Secret text field
+                    //             'label' => ilangs('Client Secret'), // Label text for the text field
+                    //             'type' => 'text', // Type of element (text)
+                    //             'layout' => 'col-12 col-md-6', // Layout styling
+                    //             'break' => true, // Indicates a break in the layout
+                    //             'condition' => 'slack_login_enable:on', // Condition to show this field
+                    //             'tab' => 'slack_login' // Tab identifier
+                    //         ],
+
+                    //         // Slack Redirect URL
+                    //         [
+                    //             'id' => 'slack_login_redirect_url', // Unique identifier for the Redirect URL text field
+                    //             'label' => ilangs('Redirect Url'), // Label text for the text field
+                    //             'type' => 'text', // Type of element (text)
+                    //             'layout' => 'col-12', // Layout styling
+                    //             'break' => true, // Indicates a break in the layout
+                    //             'condition' => 'slack_login_enable:on', // Condition to show this field
+                    //             'tab' => 'slack_login' // Tab identifier
+                    //         ]
+                    //     ]
+                    // ],
+
+                    // Instagram Login Tab
+                    [
+                        'id' => 'instagram_login', // Unique identifier for the Instagram tab
+                        'heading' => ilangs('Instagram Login'), // Heading text for the Instagram tab
+                        'fields' => [ // Fields within the Instagram tab
+
+                            // Enable Instagram Login
+                            [
+                                'id' => 'instagram_login_enable', // Unique identifier for the enable switcher
+                                'label' => ilangs('Enable'), // Label text for the switcher
+                                'type' => 'switcher', // Type of element (switcher)
+                                'layout' => 'col-12', // Layout styling
+                                'std' => 'on', // Default value (on)
+                                'break' => true, // Indicates a break in the layout
+                                'tab' => 'instagram_login' // Tab identifier
+                            ],
+
+                            // Instagram Client ID
+                            [
+                                'id' => 'instagram_login_client_id', // Unique identifier for the Client ID text field
+                                'label' => ilangs('Client ID'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'condition' => 'instagram_login_enable:on', // Condition to show this field
+                                'tab' => 'instagram_login', // Tab identifier
+                            ],
+
+                            // Instagram Client Secret
+                            [
+                                'id' => 'instagram_login_client_secret', // Unique identifier for the Client Secret text field
+                                'label' => ilangs('Client Secret'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'instagram_login_enable:on', // Condition to show this field
+                                'tab' => 'instagram_login' // Tab identifier
+                            ],
+
+                            // Instagram Redirect URL
+                            [
+                                'id' => 'instagram_login_redirect_url', // Unique identifier for the Redirect URL text field
+                                'label' => ilangs('Redirect Url'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'instagram_login_enable:on', // Condition to show this field
+                                'tab' => 'instagram_login' // Tab identifier
+                            ]
+                        ]
+                    ],
+
+                    // TikTok Login Tab
+                    [
+                        'id' => 'tiktok_login', // Unique identifier for the TikTok tab
+                        'heading' => ilangs('TikTok Login'), // Heading text for the TikTok tab
+                        'fields' => [ // Fields within the TikTok tab
+
+                            // Enable TikTok Login
+                            [
+                                'id' => 'tiktok_login_enable', // Unique identifier for the enable switcher
+                                'label' => ilangs('Enable'), // Label text for the switcher
+                                'type' => 'switcher', // Type of element (switcher)
+                                'layout' => 'col-12', // Layout styling
+                                'std' => 'on', // Default value (on)
+                                'break' => true, // Indicates a break in the layout
+                                'tab' => 'tiktok_login' // Tab identifier
+                            ],
+
+                            // TikTok Client ID
+                            [
+                                'id' => 'tiktok_login_client_id', // Unique identifier for the Client ID text field
+                                'label' => ilangs('Client ID'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'condition' => 'tiktok_login_enable:on', // Condition to show this field
+                                'tab' => 'tiktok_login', // Tab identifier
+                            ],
+
+                            // TikTok Client Secret
+                            [
+                                'id' => 'tiktok_login_client_secret', // Unique identifier for the Client Secret text field
+                                'label' => ilangs('Client Secret'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'tiktok_login_enable:on', // Condition to show this field
+                                'tab' => 'tiktok_login' // Tab identifier
+                            ],
+
+                            // TikTok Redirect URL
+                            [
+                                'id' => 'tiktok_login_redirect_url', // Unique identifier for the Redirect URL text field
+                                'label' => ilangs('Redirect Url'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'tiktok_login_enable:on', // Condition to show this field
+                                'tab' => 'tiktok_login' // Tab identifier
+                            ]
+                        ]
+                    ],
+
+                    // Twitter Login Tab
+                    [
+                        'id' => 'twitter_login', // Unique identifier for the Twitter tab
+                        'heading' => ilangs('Twitter Login'), // Heading text for the Twitter tab
+                        'fields' => [ // Fields within the Twitter tab
+
+                            // Enable Twitter Login
+                            [
+                                'id' => 'twitter_login_enable', // Unique identifier for the enable switcher
+                                'label' => ilangs('Enable'), // Label text for the switcher
+                                'type' => 'switcher', // Type of element (switcher)
+                                'layout' => 'col-12', // Layout styling
+                                'std' => 'on', // Default value (on)
+                                'break' => true, // Indicates a break in the layout
+                                'tab' => 'twitter_login' // Tab identifier
+                            ],
+
+                            // Twitter API Key
+                            [
+                                'id' => 'twitter_login_api_key', // Unique identifier for the API Key text field
+                                'label' => ilangs('API Key'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'condition' => 'twitter_login_enable:on', // Condition to show this field
+                                'tab' => 'twitter_login', // Tab identifier
+                            ],
+
+                            // Twitter API Secret Key
+                            [
+                                'id' => 'twitter_login_api_secret_key', // Unique identifier for the API Secret Key text field
+                                'label' => ilangs('API Secret Key'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'twitter_login_enable:on', // Condition to show this field
+                                'tab' => 'twitter_login' // Tab identifier
+                            ],
+
+                            // Twitter Redirect URL
+                            [
+                                'id' => 'twitter_login_redirect_url', // Unique identifier for the Redirect URL text field
+                                'label' => ilangs('Redirect Url'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'twitter_login_enable:on', // Condition to show this field
+                                'tab' => 'twitter_login' // Tab identifier
+                            ]
+                        ]
+                    ],
+
+                    //
+                    // TikTok Login Tab
+                    [
+                        'id' => 'tiktok_login', // Unique identifier for the TikTok tab
+                        'heading' => ilangs('TikTok Login'), // Heading text for the TikTok tab
+                        'fields' => [ // Fields within the TikTok tab
+
+                            // Enable TikTok Login
+                            [
+                                'id' => 'tiktok_login_enable', // Unique identifier for the enable switcher
+                                'label' => ilangs('Enable'), // Label text for the switcher
+                                'type' => 'switcher', // Type of element (switcher)
+                                'layout' => 'col-12', // Layout styling
+                                'std' => 'on', // Default value (on)
+                                'break' => true, // Indicates a break in the layout
+                                'tab' => 'tiktok_login' // Tab identifier
+                            ],
+
+                            // TikTok Client ID
+                            [
+                                'id' => 'tiktok_login_client_id', // Unique identifier for the Client ID text field
+                                'label' => ilangs('Client ID'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'condition' => 'tiktok_login_enable:on', // Condition to show this field
+                                'tab' => 'tiktok_login', // Tab identifier
+                            ],
+
+                            // TikTok Client Secret
+                            [
+                                'id' => 'tiktok_login_client_secret', // Unique identifier for the Client Secret text field
+                                'label' => ilangs('Client Secret'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12 col-md-6', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'tiktok_login_enable:on', // Condition to show this field
+                                'tab' => 'tiktok_login' // Tab identifier
+                            ],
+
+                            // TikTok Redirect URL
+                            [
+                                'id' => 'tiktok_login_redirect_url', // Unique identifier for the Redirect URL text field
+                                'label' => ilangs('Redirect Url'), // Label text for the text field
+                                'type' => 'text', // Type of element (text)
+                                'layout' => 'col-12', // Layout styling
+                                'break' => true, // Indicates a break in the layout
+                                'condition' => 'tiktok_login_enable:on', // Condition to show this field
+                                'tab' => 'tiktok_login' // Tab identifier
+                            ]
+                        ]
+                    ],
+
+
+                    // Dribbble Login Tab
+                    // [
+                    //     'id' => 'dribbble_login', // Unique identifier for the Dribbble tab
+                    //     'heading' => ilangs('Dribbble Login'), // Heading text for the Dribbble tab
+                    //     'fields' => [ // Fields within the Dribbble tab
+
+                    //         // Enable Dribbble Login
+                    //         [
+                    //             'id' => 'dribbble_login_enable', // Unique identifier for the enable switcher
+                    //             'label' => ilangs('Enable'), // Label text for the switcher
+                    //             'type' => 'switcher', // Type of element (switcher)
+                    //             'layout' => 'col-12', // Layout styling
+                    //             'std' => 'on', // Default value (on)
+                    //             'break' => true, // Indicates a break in the layout
+                    //             'tab' => 'dribbble_login' // Tab identifier
+                    //         ],
+
+                    //         // Dribbble Client ID
+                    //         [
+                    //             'id' => 'dribbble_login_client_id', // Unique identifier for the Client ID text field
+                    //             'label' => ilangs('Client ID'), // Label text for the text field
+                    //             'type' => 'text', // Type of element (text)
+                    //             'layout' => 'col-12 col-md-6', // Layout styling
+                    //             'condition' => 'dribbble_login_enable:on', // Condition to show this field
+                    //             'tab' => 'dribbble_login', // Tab identifier
+                    //         ],
+
+                    //         // Dribbble Client Secret
+                    //         [
+                    //             'id' => 'dribbble_login_client_secret', // Unique identifier for the Client Secret text field
+                    //             'label' => ilangs('Client Secret'), // Label text for the text field
+                    //             'type' => 'text', // Type of element (text)
+                    //             'layout' => 'col-12 col-md-6', // Layout styling
+                    //             'break' => true, // Indicates a break in the layout
+                    //             'condition' => 'dribbble_login_enable:on', // Condition to show this field
+                    //             'tab' => 'dribbble_login' // Tab identifier
+                    //         ],
+
+                    //         // Dribbble Redirect URL
+                    //         [
+                    //             'id' => 'dribbble_login_redirect_url', // Unique identifier for the Redirect URL text field
+                    //             'label' => ilangs('Redirect Url'), // Label text for the text field
+                    //             'type' => 'text', // Type of element (text)
+                    //             'layout' => 'col-12', // Layout styling
+                    //             'break' => true, // Indicates a break in the layout
+                    //             'condition' => 'dribbble_login_enable:on', // Condition to show this field
+                    //             'tab' => 'dribbble_login' // Tab identifier
+                    //         ]
+                    //     ]
+                    // ]
+
                 ],
-                'section' => 'advanced_options',
+                'section' => 'advanced_options', // Section where this element belongs
             ],
+
         ]
     ]
 ];

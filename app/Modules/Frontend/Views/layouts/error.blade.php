@@ -12,7 +12,7 @@
         <link rel="shortcut icon" type="image/png" href="{{ $favicon }}"/>
     @endif
 
-    <title>{{get_translate(get_option('site_name', 'iBooking'))}} {{get_seo_title_separator()}} {{__('Error 404 Page')}}</title>
+    <title>{{get_translate(get_option('site_name', 'Vil Hive'))}} {{get_seo_title_separator()}} {{__('Error 404 Page')}}</title>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('admin/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />

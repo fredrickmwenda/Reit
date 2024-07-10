@@ -48,7 +48,7 @@ class GoogleAnalyticsController extends Controller
     {
         $data = $this->analytics->fetchTotalVisitorsAndPageViews(Period::days(1));
         // Use `info`, `dd`, or `var_dump` to check the fetched data
-        info($data);
+        
 
         return response()->json($data);
     }

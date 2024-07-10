@@ -12,7 +12,9 @@ $arr_widget_nav[] = [
 'label' => get_translate(get_option($value . '_heading')),
 'items' => get_menu_by_id($menu_id)
 ];
+
 }
+
 $copy_right = get_option('footer_copyright');
 @endphp
 @push('css')
@@ -73,7 +75,7 @@ $copy_right = get_option('footer_copyright');
                     @if(!empty($copy_right))
                         {{ get_translate($copy_right) }}
                     @else
-                        ©{{ date('Y') }} iBooking - All rights reserved.
+                        ©{{ date('Y') }} Vil Hive - All rights reserved.
                     @endif
                 </div>
 

@@ -90,7 +90,7 @@ class PageService extends AbstractService
 
         return [
             'status' => 1,
-            'message' => __('Send your request successfully.')
+            'message' => __('Your request has been sent successfully.')
         ];
     }
 

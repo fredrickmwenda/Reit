@@ -16,7 +16,7 @@
 
 @section('content')
     <div class="installer-wrapper">
-        <h1 class="logo"><a href="https://booteam.co">iBooking</a></h1>
+        <h1 class="logo"><a href="https://vilhive.com">Vil Hive</a></h1>
         <div class="inner">
             <form method="POST" action="{{url('installer/config-database')}}">
                 <h4 class="mb-4">Database Configuration</h4>
@@ -29,7 +29,7 @@
                     <tr>
                         <td class="pr-1 pb-4"><b>Database Name</b></td>
                         <td class="pb-4"><input type="text" name="db_name" class="form-control" value="{{$db_name}}"/></td>
-                        <td class="pl-4 pb-4">The name of the database you want to use with iBooking.</td>
+                        <td class="pl-4 pb-4">The name of the database you want to use with Vil Hive.</td>
                     </tr>
                     <tr>
                         <td class="pr-1 pb-4"><b>Username</b></td>

@@ -212,7 +212,7 @@ class ApartmentService extends AbstractService
 
             return [
                 'status' => true,
-                'message' => __('Send your request successfully. Please wait response from owner of this service.')
+                'message' => __('Your request has been sent successfully. Please wait response from owner of this service.')
             ];
         }
 

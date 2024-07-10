@@ -270,7 +270,7 @@ if (!function_exists('get_nav')) {
             
             switch ($data['walker']) {
                 case 'main':
-                    //info('main');
+                   
                     get_main_menu($menuItems);
                     break;
                 case 'main-mobile':

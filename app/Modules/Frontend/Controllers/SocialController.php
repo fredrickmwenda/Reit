@@ -94,4 +94,4 @@ class SocialController extends Controller
         }
         return $user;
     }
-}
+} 

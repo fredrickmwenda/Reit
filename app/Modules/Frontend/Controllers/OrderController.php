@@ -44,7 +44,7 @@ class OrderController extends Controller
         if ($response && ($response['payment_status'] == 1)) {
             return redirect(route('complete-order') . "?" . http_build_query(['order_token' => $order_token]));
         } else {
-            info('we checking out');
+            
             return redirect(url('checkout'))->with([
                 'message' => $response['message'],
                 'order_token' => $order_token,
@@ -63,7 +63,7 @@ class OrderController extends Controller
     public function checkoutAction(Request $request)
     {
         $post_data = $request->all();
-        info('post_data');
+       
 
         $payment = $post_data['payment_method'];
         if ($payment == 'paystack') {
@@ -248,7 +248,7 @@ class OrderController extends Controller
                     }
 
 
-                    info('paystack');
+                    
                     $model = new \App\Models\Order();
                     $order = $model->query()->findOrFail($order_id);
 
@@ -281,7 +281,7 @@ class OrderController extends Controller
                         'redirect' => $paymentLink->getTargetUrl(),
                         // Include any other necessary data
                     ];
-                    info('response is', $response);
+                   
 
                     // Return the response as JSON using Laravel's response() method
                     return response()->json($response);

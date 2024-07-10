@@ -5,9 +5,9 @@
 
 @section('content')
     <div class="installer-wrapper">
-        <h1 class="logo"><a href="https://booteam.co">iBooking</a></h1>
+        <h1 class="logo"><a href="https://vilhive.com">Vil Hive</a></h1>
         <div class="inner">
-            <p class="mb-4">Welcome to <b>iBooking</b> installer page. Before getting started, we need some information on the database. You will need to know the following items before proceeding.</p>
+            <p class="mb-4">Welcome to <b>Vil Hive</b> installer page. Before getting started, we need some information on the database. You will need to know the following items before proceeding.</p>
 
             <ol class="mb-4">
                 <li>Database name</li>

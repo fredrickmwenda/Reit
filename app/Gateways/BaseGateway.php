@@ -189,7 +189,7 @@ if(!class_exists('BaseGateway')) {
 				$settings = array_merge(array_flip($payment_structure_temp), $settings);
 			}
 		
-			info('settings', $settings);
+			
 		
 			return $settings;
 		}

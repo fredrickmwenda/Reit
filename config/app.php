@@ -178,6 +178,7 @@ return [
         TorMorten\Eventy\EventServiceProvider::class,
 	    App\Modules\ServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
+        \SocialiteProviders\Manager\ServiceProvider::class, // add
         App\Plugins\ServiceProvider::class
     ],
 

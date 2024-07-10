@@ -762,6 +762,7 @@ if(!function_exists('_http_build_query')) {
 if(!function_exists('get_logo')) {
 	function get_logo() {
 		$option = get_option( 'logo', '' );
+		dd('option is',$option);
 		$res    = false;
 		if ( ! empty( $option ) ) {
 			$url = get_attachment_url( $option );

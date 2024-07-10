@@ -5,7 +5,7 @@
 
 @section('content')
     <div class="installer-wrapper">
-        <h1 class="logo"><a href="https://booteam.co">iBooking</a></h1>
+        <h1 class="logo"><a href="https://vilhive.com">Vil Hive</a></h1>
         <div class="inner">
             <p class="mb-4"><b>Database connection is successful</b></p>
             <p class="mb-4">We’re going to use this information to create a .env file and contact to your database successfully. Now you can <b>install demo data</b> for your website or skip it if you don't want to.</p>

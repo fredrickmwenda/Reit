@@ -237,7 +237,7 @@ class SubscriptionController extends Controller
         //add  the reference too in the temp subscription
         $planPrice = PlanPrice::where('plan_id', $plan->id)->first();
         $reference = Paystack::genTranxRef();
-        //info($planPrice);
+        
         // Retrieve the selected subscription plan by ID
         //$subscriptionPlan = SubscriptionPlan::findOrFail($planId);
         if ($user->subscription) {

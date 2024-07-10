@@ -14,7 +14,7 @@
         <link rel="shortcut icon" type="image/png" href="{{ $favicon }}"/>
     @endif
 
-    <title>{{get_translate(get_option('site_name', 'iBooking'))}} {{get_seo_title_separator()}} @yield('title')</title>
+    <title>{{get_translate(get_option('site_name', 'Vil Hive'))}} {{get_seo_title_separator()}} @yield('title')</title>
 
     @php
         admin_enqueue_styles('gmz-form2');

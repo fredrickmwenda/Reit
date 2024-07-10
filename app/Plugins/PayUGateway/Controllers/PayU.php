@@ -82,7 +82,7 @@ class PayU extends \BaseGateway
             $cancelUrl = $this->getLinkPaymentChecking($order_id, true);
             $currency = get_option('primary_currency', 'USD');
             $total = round( (float) $order['total'], 2 );
-            $site_name = get_translate(get_option('site_name', 'iBooking'));
+            $site_name = get_translate(get_option('site_name', 'Vil Hive'));
             $description = sprintf(__('%s Reservation'), $site_name);
             $c_email = request()->post('email');
             $c_phone = request()->post('phone');

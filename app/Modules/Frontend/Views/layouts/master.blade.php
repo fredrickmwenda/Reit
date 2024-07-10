@@ -37,9 +37,8 @@
             color: #fff;
             text-align: center;
             padding-top: 20%;
-        } 
+        }
         .dropdown-menu-up {
-
             position: absolute!important;
             will-change: transform;
             top: auto!important;
@@ -119,7 +118,7 @@
         if($page_title){
             $title_tag =  $page_title;
         }else{
-            $site_name = get_translate(get_option('site_name', 'iBooking'));
+            $site_name = get_translate(get_option('site_name', 'Vil Hive'));
             $seo_separator_title = get_seo_title_separator();
             $title_tag = $site_name . ' ' . $seo_separator_title;
         }
@@ -139,7 +138,6 @@
 @include('Frontend::components.footer')
 @php init_footer(); @endphp
 
-
 <script>
     $(document).ready(function(){
     $('#dropdownGuestButton').on('click', function(){
@@ -150,7 +148,6 @@
         dropdownMenu.toggleClass('show dropdown-menu-up');
     });
 });
-
 </script>
 
 <!-- Google tag (gtag.js) -->
@@ -175,8 +172,6 @@
 
 
 @stack('scripts')
-
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
